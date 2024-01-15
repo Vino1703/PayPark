@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6fcf9"
+    tools:context=".MainActivity8">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME..."
+            android:textColor="#121112"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_below="@id/ll2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/csearch"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="Search your area..."
+            android:inputType="text"
+            android:textColor="#eb6cdc"
+            android:padding="20sp"
+            android:textColorHint="#676a6e"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/searchbtn"
+            android:layout_marginLeft="10dp"
+            android:padding="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/srch"
+            android:text=""
+            android:textColor="#121112"
+            android:gravity="right"
+            android:textSize="24sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/one"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/sangam" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="SANGAM READYMATES"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkone"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/two"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/manjunatha" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="SRI MANJUNATHA SILKS"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parktwo"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/three"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/dudes" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="DUDES FASHION"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkthree"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/four"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/meenakshi" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="MEENAKSHI THEATRE"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkfour"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/five"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/mall" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="AGS MALL"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkfive"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/six"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/ckc" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="CKC THEATRE"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parksix"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/seven"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/tcs" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="BALAMURUGAN TVS SHOWROOM"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkseven"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/eight"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/suprmarket" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="AKSHAYA SUPER MARKET"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parkeight"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff0000"
+                    app:cardCornerRadius="8dp">
+                    <ImageView
+                        android:id="@+id/nine"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:src="@drawable/medicalshop" />
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="POONCHOLAI MEDICAL SHOP"
+                        android:background="@color/white"
+                        android:textColor="#2e3030"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/parknine"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:text="PARK"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

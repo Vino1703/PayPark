@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31F1930A"
+    tools:context=".About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Park"
+            android:textColor="#DA00FF"
+            android:textSize="38dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smarter to Park your Vehicle with high security"
+            android:textColor="#009688"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@id/ll1"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lll"
+                android:layout_below="@id/ll"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lll"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABOUT : "
+                        android:layout_gravity="left"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:paddingLeft="10dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="          This Project is titled as “ PAY PARK “ which focuses on the reduction of Traffic in Common or Public places . Normally in theatres , industries, hospitals, and other places, there is a major issue that the public needs to park their vehicles. They need to search for parking,  and they need to wait and observe which line is empty, and then their vehicle is getting parked, For this process more than one worker is involved and in some areas money is also consumed. Though there is no security for our vehicles. Sometimes our vehicle will get scratched and some may be stolen too. This is not fair and its money consuming and also includes man power. Thus to reduce this issue the Application called “PAY PARK “  was introduced. With this application, the users may not worry about their vehicle. Here the users can pre – book slots so that no other vehicle can occupy their space. So that the damage to the vehicles can be reduced, and our vehicles can be securer. In this Application, Here has a parking module where users can book their slots. As soon as they entered their portal they are asked to fill their basic details like Name, Address, Mobile Number, etc. Here has a module called Extend . By clicking this we can extend our time by paying the required amount . If the users failed to extend their timings or parked car without any prior information their vehicle will be fined. The fine is done on the vehicle number. This Application ensures the obedience of parking a vehicle and we can assure that the traffic will be surely reduced. "
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lll"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PARKING FEE : "
+                        android:layout_gravity="left"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lll"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 hour  : Rs . 60 \n2 hours : Rs . 100 \n5 hours : Rs . 250 "
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
